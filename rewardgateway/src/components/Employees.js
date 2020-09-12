@@ -83,7 +83,7 @@ const Employees = ({ employees, load }) => {
       {employees.map((employee, index) => (
         <EmployeeContainer key={employee.uuid} 
           style={
-              [employee.uuid] ? 
+              backgroundArray[employee.uuid] ? 
               { backgroundColor: backgroundArray[employee.uuid]}
               : { backgroundColor: 'white' }}  
         >
